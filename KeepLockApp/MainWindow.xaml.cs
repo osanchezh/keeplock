@@ -39,6 +39,7 @@ namespace KeepLockApp
         {
             operation.Add(new Operation { Id=contador, Service= cbServicio.SelectedValue.ToString(), Usuario=txtUsuario.Text, Contrasenia=txtContrasenia.Text, IP=txtIP.Text });
             contador++;
+            int i = 1;
         }
 
         class Operation {
