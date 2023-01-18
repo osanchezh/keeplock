@@ -7,7 +7,11 @@
         mc:Ignorable="d"
         Title="OSH | Keep Lock App" Height="525" Width="494" WindowStyle="ToolWindow">
     <Grid HorizontalAlignment="Center" Width="494" Margin="0,0,0,22">
-        <Border x:Name="bdApp" BorderBrush="#FFABA3A3" BorderThickness="1" Margin="10,10,10,279">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <Border x:Name="bdApp" BorderBrush="#FFABA3A3" BorderThickness="1" Margin="10,10,10,277">
             <Grid Margin="0,-1,-1,-1">
                 <Label Content="Servicio:" HorizontalAlignment="Left" Margin="24,34,0,0" VerticalAlignment="Top"/>
                 <ComboBox Name="cbServicio" HorizontalAlignment="Left" Margin="83,36,0,0" VerticalAlignment="Top" Width="120"/>
@@ -22,8 +26,8 @@
 
             </Grid>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Margin="10,231,10,10">
-            <DataGrid Name="dgOperacion" d:ItemsSource="{d:SampleData ItemCount=4}" Margin="1,25,-1,-25"/>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="10,231,10,8">
+            <DataGrid Name="dgOperacion" d:ItemsSource="{d:SampleData ItemCount=4}" Margin="1,25,-1,-1"/>
         </Border>
 
 
